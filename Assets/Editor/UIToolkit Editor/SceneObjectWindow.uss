@@ -1,0 +1,46 @@
+#CreateBtn {
+    -unity-font-style: bold;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    -unity-font: url('Library/unity default resources');
+}
+
+.PropField {
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.PropField > Label {
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    -unity-font-style: bold;
+    color: rgb(229, 229, 229);
+    min-width: auto;
+}
+
+HelpBox {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+HelpBox > Label {
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+}
+
+HelpBox > Label:hover {
+    font-size: 13px;
+    color: rgb(185, 185, 185);
+    -unity-font-style: bold;
+}

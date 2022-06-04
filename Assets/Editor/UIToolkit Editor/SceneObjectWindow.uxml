@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="SceneObjectWindow.uss" />
+    <ui:VisualElement name="top" style="height: 24px; flex-direction: row; margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;">
+        <uie:ObjectField label="Object Field" name="ObjectField" style="flex-grow: 1; height: auto; -unity-font-style: bold; -unity-text-align: middle-left;" />
+        <ui:Button text="Create" display-tooltip-when-elided="true" name="CreateBtn" style="width: 100px; background-color: rgb(30, 75, 0);" />
+    </ui:VisualElement>
+    <ui:VisualElement name="Mid" style="flex-grow: 1; flex-direction: row;">
+        <ui:ListView focusable="true" name="ListView" style="width: 200px; border-top-width: 1px; border-right-width: 1px; border-left-color: rgb(22, 22, 22); border-right-color: rgb(22, 22, 22); border-top-color: rgb(22, 22, 22); border-bottom-color: rgb(22, 22, 22); border-bottom-width: 1px;" />
+        <ui:VisualElement name="right" style="flex-grow: 1; border-top-width: 1px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px;">
+            <ui:Label text="Label" display-tooltip-when-elided="true" name="Label" style="font-size: 24px; margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;" />
+            <ui:Foldout text="Foldout" style="-unity-background-image-tint-color: rgb(229, 229, 229); background-color: rgb(77, 77, 77); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(149, 149, 149); border-right-color: rgb(149, 149, 149); border-top-color: rgb(149, 149, 149); border-bottom-color: rgb(149, 149, 149); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
+                <ui:TextField picking-mode="Ignore" label="Name" value="filler text" name="NameText" class="PropField" style="height: auto;" />
+                <uie:Vector3Field label="Position" name="PosText" class="PropField" />
+                <ui:TextField picking-mode="Ignore" label="Text Field" value="filler text" text="filler text" name="tempTextField" class="PropField" />
+            </ui:Foldout>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Button text="Refresh" display-tooltip-when-elided="true" name="RefreshBtn" style="height: 40px; font-size: 15px; -unity-font-style: bold; -unity-font: url(&apos;Library/unity default resources&apos;); color: rgb(255, 255, 255); background-color: rgb(77, 77, 77); margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;" />
+</ui:UXML>
