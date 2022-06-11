@@ -17,7 +17,6 @@ public class GameManager : MonoBehaviour
 
     public TestStruct[] testList;
 
-
     private void Awake()
     {
         if (instance == null)
